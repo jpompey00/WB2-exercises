@@ -3,6 +3,15 @@
 
 var radius = 2
 
+
+var result = `The area of a circle with radius ${radius} is ${(Math.PI * radius ** 2).toFixed(2)}`
+
+
+//result with string concatenation
 console.log(
-    "The are of a circle with radius " + radius + " is " + (Math.PI * radius**2)
+    "The area of a circle with radius " + radius + " is " + (Math.PI * radius**2)
 )
+
+
+//result with string Literals
+console.log(result)
