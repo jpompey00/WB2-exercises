@@ -6,4 +6,4 @@ var liability = 50;
 
 
 console.log(
-    "Your net worth is " + (assets - liability) + " dollars");
+    "Your net worth is $" + (assets - liability));
