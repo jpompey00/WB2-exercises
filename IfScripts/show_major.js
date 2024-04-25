@@ -1,22 +1,10 @@
 "use strict";
-
-let testInfo = new StudentInfo("Hello", "BIO");
-
-console.log(testInfo.toString())
-
-//console.log(`Student: ${currentStudentIndex.studentName}\n Major: ${majorInfo[currentStudentIndex.studentMajor]}\n Advising Location: ${majorInfo[currentStudentIndex.studentMajor]}`)
+//I hate how i did this.
 
 
-
+let testInfo = new StudentInfo("TestName", "BIOL");
 //constructor object that you create based on the student 
-function StudentInfo(studentName, studentMajor) {
-    this.studentName = studentName;
-    this.studentMajorCode = studentMajor;
-    
-    this.toString = function() {
-        return this.studentName;
-      };
-}
+
 
 //An object structured like a map that holds the Major Info
 const majorInfo = {
@@ -37,6 +25,20 @@ const majorLocation = {
     "MKT": "Westley Hall, Room 310"
 }
 
+function StudentInfo(studentName, studentMajor) {
+    this.studentName = studentName;
+    this.majorCode = studentMajor;
+    
+}
+
+
+console.log(printInfo(testInfo))
+
+
+
+function printInfo(studentInfo){
+    return `Student: ${studentInfo.studentName}\n Major: ${majorInfo[studentInfo.majorCode]}\n Advising Location: ${majorLocation[studentInfo.majorCode]}`
+}
 
 
 //Everything past this point was solely for testing data--------------
