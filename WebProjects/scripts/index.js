@@ -2,14 +2,6 @@
 
 window.onload = init;
 
-//The buttons
-const addBtn = document.getElementById("addBtn");
-const subtractBtn = document.getElementById("subtractBtn");
-const multiplyBtn = document.getElementById("multiplyBtn");
-const divideBtn = document.getElementById("divideBtn");
-const number1Element = document.getElementById("number1Field");
-const number2Element = document.getElementById("number2Field");
-const answerElement = document.getElementById("answerField");
 
 
 
@@ -19,6 +11,13 @@ const answerElement = document.getElementById("answerField");
 //style with bootstrap a bit
 
 function init() {
+
+    //The buttons
+    const addBtn = document.getElementById("addBtn");
+    const subtractBtn = document.getElementById("subtractBtn");
+    const multiplyBtn = document.getElementById("multiplyBtn");
+    const divideBtn = document.getElementById("divideBtn");
+
 
 
     //Solution done with 4 functions------------
@@ -40,45 +39,33 @@ function init() {
 
 //Each function does what their name implies. Outputs the value to the answer element.
 function onAddButtonClicked() {
-    const number1Value = number1Element.value;
-    const number2Value = number2Element.value;
-    const answer = Number(number1Value) + Number(number2Value);
-
+    //this is reused too much. figure out how to fix.
+    const number1Element = document.getElementById("number1Field");
+    const number2Element = document.getElementById("number2Field");
+    const answerElement = document.getElementById("answerField");
+    const answer = Number(number1Element.value) + Number(number2Element.value);
     answerElement.value = answer;
-    console.log(Number(number1Value) + Number(number2Value));
 }
 function onSubtractButtonClicked() {
     const number1Element = document.getElementById("number1Field");
     const number2Element = document.getElementById("number2Field");
     const answerElement = document.getElementById("answerField");
-    const number1Value = number1Element.value;
-    const number2Value = number2Element.value;
-    const answer = Number(number1Value) - Number(number2Value);
-
+    const answer = Number(number1Element.value) - Number(number2Element.value);
     answerElement.value = answer;
-    console.log(Number(number1Value) - Number(number2Value));
 }
 function onMultiplyButtonClicked() {
     const number1Element = document.getElementById("number1Field");
     const number2Element = document.getElementById("number2Field");
     const answerElement = document.getElementById("answerField");
-    const number1Value = number1Element.value;
-    const number2Value = number2Element.value;
-    const answer = Number(number1Value) * Number(number2Value);
-
+    const answer = Number(number1Element.value) * Number(number2Element.value);
     answerElement.value = answer;
-    console.log(Number(number1Value) * Number(number2Value));
 }
 function onDivideButtonClicked() {
     const number1Element = document.getElementById("number1Field");
     const number2Element = document.getElementById("number2Field");
     const answerElement = document.getElementById("answerField");
-    const number1Value = number1Element.value;
-    const number2Value = number2Element.value;
-    const answer = Number(number1Value) / Number(number2Value);
-
+    const answer = Number(number1Element.value) / Number(number2Element.value);
     answerElement.value = answer;
-    console.log(Number(number1Value) / Number(number2Value));
 }
 
 
