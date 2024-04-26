@@ -1,7 +1,7 @@
 "use strict";
 
 //Change these values to check
-let integerA = 2;
+let integerA = 100;
 let integerB = 3;
 let integerC = 2;
 //---------------------------
