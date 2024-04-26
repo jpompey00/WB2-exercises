@@ -16,13 +16,13 @@ function init() {
     const divideBtn = document.getElementById("divideBtn");
 
 
-    //Solution done with 4 functions-----------
+    //Solution done with 4 functions------------
     addBtn.onclick = onAddButtonClicked;
     subtractBtn.onclick = onSubtractButtonClicked;
     multiplyBtn.onclick = onMultiplyButtonClicked;
     divideBtn.onclick = onDivideButtonClicked;
 
-    
+
     //Solution done with Anonmyous Functions----------------------
     // addBtn.onclick = function () { onCalculatorButtonClicked(1); };
     // subtractBtn.onclick = function () { onCalculatorButtonClicked(2); };
