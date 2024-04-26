@@ -7,13 +7,14 @@ const addBtn = document.getElementById("addBtn");
 const subtractBtn = document.getElementById("subtractBtn");
 const multiplyBtn = document.getElementById("multiplyBtn");
 const divideBtn = document.getElementById("divideBtn");
+const number1Element = document.getElementById("number1Field");
+const number2Element = document.getElementById("number2Field");
+const answerElement = document.getElementById("answerField");
 
 
-//connect all the elements to variables
-//add the onButtonClick functions
-//have the value get displayed in the answer box
 
-//optional:
+
+//TODO optional:
 //have the answer box unable to accept any input.
 //style with bootstrap a bit
 
@@ -35,16 +36,10 @@ function init() {
     // divideBtn.onclick = function () { onCalculatorButtonClicked(4); };
 }
 
-function onTerraClicked() {
-    alert("He's fucking dead");
-}
 
 
 //Each function does what their name implies. Outputs the value to the answer element.
 function onAddButtonClicked() {
-    const number1Element = document.getElementById("number1Field");
-    const number2Element = document.getElementById("number2Field");
-    const answerElement = document.getElementById("answerField");
     const number1Value = number1Element.value;
     const number2Value = number2Element.value;
     const answer = Number(number1Value) + Number(number2Value);
