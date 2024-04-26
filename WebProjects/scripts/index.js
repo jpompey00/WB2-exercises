@@ -1,4 +1,13 @@
+"use strict";
+
 window.onload = init;
+
+//The buttons
+const addBtn = document.getElementById("addBtn");
+const subtractBtn = document.getElementById("subtractBtn");
+const multiplyBtn = document.getElementById("multiplyBtn");
+const divideBtn = document.getElementById("divideBtn");
+
 
 //connect all the elements to variables
 //add the onButtonClick functions
@@ -9,11 +18,6 @@ window.onload = init;
 //style with bootstrap a bit
 
 function init() {
-    //The buttons
-    const addBtn = document.getElementById("addBtn");
-    const subtractBtn = document.getElementById("subtractBtn");
-    const multiplyBtn = document.getElementById("multiplyBtn");
-    const divideBtn = document.getElementById("divideBtn");
 
 
     //Solution done with 4 functions------------
@@ -23,12 +27,18 @@ function init() {
     divideBtn.onclick = onDivideButtonClicked;
 
 
+
     //Solution done with Anonmyous Functions----------------------
     // addBtn.onclick = function () { onCalculatorButtonClicked(1); };
     // subtractBtn.onclick = function () { onCalculatorButtonClicked(2); };
     // multiplyBtn.onclick = function () { onCalculatorButtonClicked(3); };
     // divideBtn.onclick = function () { onCalculatorButtonClicked(4); };
 }
+
+function onTerraClicked() {
+    alert("He's fucking dead");
+}
+
 
 //Each function does what their name implies. Outputs the value to the answer element.
 function onAddButtonClicked() {
@@ -115,12 +125,12 @@ function onCalculatorButtonClicked(operation) {
 
 
 /*
-The first function is ran with the (1) and is expecting a result 
+The first function is ran with the (1) and is expecting a result
 when the document starts
 The second one is running the function  when its clicked, the function
 is called
 The third one is emulating how the second one does it but also passing the parameter
-I need another explination on this! 
+I need another explination on this!
 */
 
 // addBtn.onclick = onAddButtonClicked(1);
